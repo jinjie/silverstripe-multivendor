@@ -1,0 +1,7 @@
+---
+name: multivendor
+---
+
+SilverStripe\Security\Member:
+    extensions:
+        - SwiftDevLabs\MultiVendor\Extensions\MemberExtension

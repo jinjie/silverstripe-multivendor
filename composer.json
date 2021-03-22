@@ -1,0 +1,24 @@
+{
+    "name": "jinjie/silverstripe-multivendor",
+    "description": "Silverstripe 4 Multi Vendor Add-on",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kong Jin Jie",
+            "email": "jinjie@swiftdev.sg"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "silverstripe/cms": "^4.7@dev",
+        "sheadawson/silverstripe-zenvalidator": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SwiftDevLabs\\MultiVendor\\": ["src/"]
+        }
+    }
+}
