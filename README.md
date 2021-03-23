@@ -7,8 +7,7 @@ capability on a Silverstripe 4 CMS.
 
 ## Requirements
 
-- PHP >= 7.1
-- Silverstripe CMS ^4.7
+See [composer.json](composer.json)
 
 ## Installation
 
