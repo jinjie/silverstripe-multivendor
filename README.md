@@ -1,4 +1,4 @@
-# Silverstripe 4 Multi Vendor Add-on
+# WIP: Silverstripe 4 Multi Vendor Add-on
 
 ## Introduction
 
