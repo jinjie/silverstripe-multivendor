@@ -12,6 +12,7 @@ namespace SwiftDevLabs\MultiVendor\Forms;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FormAction;
+use SilverStripe\ORM\ValidationResult;
 use SwiftDevLabs\MultiVendor\Models\Listing;
 
 class ListingForm extends Form
@@ -63,12 +64,14 @@ class ListingForm extends Form
         if ($listing->isInDB()) {
             $listing->write();
             $this->sessionMessage(
-                _t(self::class . ".LISTING_SAVED", "Listing saved")
+                _t(self::class . ".LISTING_SAVED", "Listing saved"),
+                ValidationResult::TYPE_GOOD
             );
         } else {
             $listing->write();
             $this->sessionMessage(
-                _t(self::class . ".LISTING_CREATED", "Listing created")
+                _t(self::class . ".LISTING_CREATED", "Listing created"),
+                ValidationResult::TYPE_GOOD
             );
         }
 

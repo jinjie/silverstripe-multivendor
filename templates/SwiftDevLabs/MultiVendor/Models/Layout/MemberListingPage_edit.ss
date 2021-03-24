@@ -1,4 +1,4 @@
-<div class="content-container size3of4 unit lastUnit">
+<div class="container">
     <article>
         <h1>{$Title}</h1>
 

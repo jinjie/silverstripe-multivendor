@@ -1,13 +1,13 @@
-<div class="content-container size3of4 unit lastUnit">
+<div class="container">
     <article>
         <h1>{$Title}</h1>
 
-        <a href="{$Link(add)}">Add new listing</a>
+        <a href="{$Link(add)}" class="btn btn-primary">Add new listing</a>
 
         <% if $Listings %>
-            <div class="multivendor-listings-list">
+            <div class="multivendor-listings-list row">
                 <% loop PaginatedListings %>
-                    <div class="multivendor-listings-list-item">
+                    <div class="multivendor-listings-list-item col-6 col-md-4">
                         <a href="{$Top.Link(edit)}/{$ID}">
                             {$FeaturedImage.Fill(200, 200)}
                         </a>
