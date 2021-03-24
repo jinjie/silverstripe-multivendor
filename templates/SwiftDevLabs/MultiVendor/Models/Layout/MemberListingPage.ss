@@ -6,7 +6,7 @@
 
         <% if $Listings %>
             <div class="multivendor-listings-list row">
-                <% loop PaginatedListings %>
+                <% loop $PaginatedListings %>
                     <div class="multivendor-listings-list-item col-6 col-md-4">
                         <a href="{$Top.Link(edit)}/{$ID}">
                             {$FeaturedImage.Fill(200, 200)}
@@ -18,6 +18,8 @@
                     </div>
                 <% end_loop %>
             </div>
+
+            <% include SwiftDevLabs/MultiVendor/Includes/Pagination Result=$PaginatedListings %>
         <% end_if %>
     </article>
 </div>
